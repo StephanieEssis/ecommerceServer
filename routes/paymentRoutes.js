@@ -1,6 +1,6 @@
 const express = require('express');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-const Cart = require('../models/Cart');
+const Cart = require('../models/cart');
 const { protect } = require('./authRoutes');
 const router = express.Router();
 
